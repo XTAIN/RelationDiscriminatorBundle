@@ -1,1 +1,34 @@
-{  "name": "xtain/relation-discriminator-bundle",  "type": "symfony-bundle",  "description": "Contains glue code relation-discriminator",  "authors": [    {      "name": "Maximilian Ruta",      "email": "mr@xtain.net"    }  ],  "require": {    "php": ">=5.3.3",    "symfony/symfony": "~2.8",    "xtain/relation-discriminator": "*"  },  "suggest": {    "symfony/phpunit-bridge": "",    "phpunit/phpunit": ""  },  "autoload": {    "psr-4": { "XTAIN\\Bundle\\RelationDiscriminatorBundle\\": "" },    "exclude-from-classmap": [      "/Tests/"    ]  },  "minimum-stability": "dev",  "extra": {    "branch-alias": {      "dev-master": "1.0-dev"    }  }}
+{
+  "name": "xtain/relation-discriminator-bundle",
+  "type": "symfony-bundle", 
+  "description": "Contains glue code relation-discriminator",
+  "authors": [
+    {
+      "name": "Maximilian Ruta",
+      "email": "mr@xtain.net"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "symfony/symfony": "~2.8",
+    "xtain/relation-discriminator": "*"
+  },
+  "suggest": {
+    "symfony/phpunit-bridge": "",
+    "phpunit/phpunit": ""
+  },
+  "autoload": {
+    "psr-4": {
+      "XTAIN\\Bundle\\RelationDiscriminatorBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
