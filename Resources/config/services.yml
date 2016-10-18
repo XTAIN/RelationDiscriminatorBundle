@@ -1,0 +1,18 @@
+services:
+    xtain_relation_discriminator.map_registry:
+        class: XTAIN\RelationDiscriminator\MapRegistry
+        arguments:
+           - [ ]
+
+    xtain_relation_discriminator.doctrine.discriminator_listener:
+        class: XTAIN\RelationDiscriminator\Doctrine\DiscriminatorListener
+        arguments:
+           - "@xtain_relation_discriminator.map_registry"
+        tags:
+           - { name: doctrine.event_listener, event: loadClassMetadata }
+
+    xtain_relation_discriminator.jms_serializer.discriminator_metadata_driver:
+        class: XTAIN\RelationDiscriminator\JMSSerializer\DiscriminatorMetadataDriver
+        arguments:
+           - ""
+           - "@xtain_relation_discriminator.map_registry"
