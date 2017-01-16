@@ -11,7 +11,7 @@
   "require": {
     "php": ">=5.3.3",
     "symfony/symfony": "~2.8",
-    "xtain/relation-discriminator": "*"
+    "xtain/relation-discriminator": "~0.9|~1.0"
   },
   "suggest": {
     "symfony/phpunit-bridge": "",
