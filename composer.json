@@ -10,7 +10,9 @@
   ],
   "require": {
     "php": ">=5.3.3",
-    "symfony/symfony": "~2.8|~3.0|~4.0",
+    "symfony/config": "~2.8|~3.0|~4.0",
+    "symfony/dependency-injection": "~2.8|~3.0|~4.0",
+    "symfony/http-kernel": "~2.8|~3.0|~4.0",
     "xtain/relation-discriminator": "~0.9|~1.0"
   },
   "suggest": {
