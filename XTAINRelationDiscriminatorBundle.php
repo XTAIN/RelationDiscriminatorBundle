@@ -16,6 +16,6 @@ class XTAINRelationDiscriminatorBundle extends Bundle
     public function build(ContainerBuilder $container)
     {
         $container->addCompilerPass(new MapRegistryPass());
-        $container->addCompilerPass(new JMSSerializerDiscriminatorPass(), PassConfig::TYPE_BEFORE_REMOVING);
+        $container->addCompilerPass(new JMSSerializerDiscriminatorPass(), PassConfig::TYPE_BEFORE_REMOVING, -100);
     }
 }
