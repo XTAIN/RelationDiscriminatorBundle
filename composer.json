@@ -1,6 +1,7 @@
 {
   "name": "xtain/relation-discriminator-bundle",
   "type": "symfony-bundle",
+  "license": "MIT",
   "description": "Contains glue code relation-discriminator",
   "authors": [
     {
